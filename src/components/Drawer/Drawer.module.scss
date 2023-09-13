@@ -1,0 +1,63 @@
+.drawer {
+  font-family: 'Inter', sans-serif;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+.drawerInner {
+  position: absolute;
+  padding: 30px;
+  height: 100vh;
+  right: 0;
+  width: 385px;
+  background-color: #fff;
+  .drawerTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    img {
+      cursor: pointer;
+      width: 32px;
+    }
+  }
+}
+.drawerItems {
+  height: 545px;
+  overflow-x: hidden;
+}
+.priceInfo {
+  p {
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  button {
+    margin-top: 25px;
+  }
+}
+.drawerContent {
+  height: 93%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

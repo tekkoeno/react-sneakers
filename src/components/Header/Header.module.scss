@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 45px;
+  border-bottom: #eaeaea 1px solid;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  .logoContent {
+    margin-left: 16px;
+  }
+  img {
+    width: 40px;
+  }
+  h2 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h3 {
+    color: #9d9d9d;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.input {
+  position: relative;
+  &::before {
+    content: '';
+    background-image: url('./../../assets/img/search.svg');
+    background-repeat: no-repeat;
+    top: 11px;
+    left: 7px;
+    width: 16px;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  input {
+    border: 1px solid #9d9d9d;
+    border-radius: 5px;
+    padding: 10px 10px 10px 30px;
+    width: 200px;
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}
+.options {
+  display: flex;
+  align-items: center;
+  div + a {
+    margin-left: 28px;
+  }
+  a + a {
+    margin-left: 28px;
+  }
+}
+
+.cartIcon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 10px;
+    align-items: center;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,134 @@
+body {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #e7f6ff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.btn {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 18px;
+  background: #9dd458;
+  width: 325px;
+  border: none;
+  color: #fff;
+  outline: transparent;
+}
+.wrapper {
+  margin: 30px;
+  padding: 45px;
+  border-radius: 20px;
+  background-color: #fff;
+  min-height: 100vh;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sneakers {
+  padding: 32px;
+  .content__top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .content__middle {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    .content__input {
+      position: relative;
+      input {
+        border-radius: 10px;
+        border: 1px solid #f3f3f3;
+        padding: 15px 15px 15px 35px;
+        width: 250px;
+        &::placeholder {
+          color: #c4c4c4;
+        }
+      }
+      &::before {
+        content: '';
+        background-image: url('../assets/img/search.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 16px;
+        left: 10px;
+        display: block;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .title {
+      color: #000;
+      font-family: 'Inter' sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  .content__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+.cart {
+  padding: 32px;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  &__sneaker {
+    margin-top: 35px;
+    width: 210px;
+    padding: 0 35px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+    border: 1px solid #f3f3f3;
+    background: #fff;
+    h2 {
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &__info-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__price {
+    h3 {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #bdbdbd;
+    }
+    p {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
